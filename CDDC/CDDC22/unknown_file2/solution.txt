@@ -1,0 +1,7 @@
+The first file was a hidden zip, when binmwalked it said that a Flag.pdf existed in the zip. To extract it we had to binwalk from the specific offset where it was located. That gaves us the Flag.pdf as well as a documentation.pdf, which contained a link to a password list.
+
+The flag.pdf was password encrypted and by writing a simple pytohn script to brute force using the word list we got the password; copacaban.
+
+We could open the flag.pdf and the flag was written in white text.
+
+Flag: CDDC22{T6is_is_4he_9re@tes4_D@y_0f_my_1ife!}

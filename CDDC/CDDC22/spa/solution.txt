@@ -1,0 +1,4 @@
+This was quite an easy one, by inspecting source code we found that when a user is created they are given administrator as username. With further inspection we found the password hidden as a comment as well. Once we were in it was easy to inspect the states of the components using React Dev Tools and in the Home-components user had the flag as its state.
+
+
+Flag: CDDC22{50urc3_m4p_15_h1dd3n_g3m}

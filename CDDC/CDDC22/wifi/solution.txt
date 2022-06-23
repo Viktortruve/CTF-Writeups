@@ -1,0 +1,7 @@
+We know that the password has the form 2XXXX2XX and X is a digit 0-9, I wrote a script that generates all possible combinations of these passwords and creates a wordlist then ran aircrack-ng with that wordlist.
+
+aircrack-ng -a2 -w out.txt wpa_crack.cap
+
+This gave the flag.
+
+Flag: CDDC22{23501268}

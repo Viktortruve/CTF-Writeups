@@ -1,0 +1,3 @@
+You were given an arm file, I ran strings on this to extract info. Found that the user was r00t and the password was s3cr3t_k3y. When executed the file asks for user and then password. When entered you were given access to a shell and by ls-ing I saw a file called flag. cat that file to get flag.
+
+Flag: CDDC22{R3versing_4rm_fun_AND_G00d!!}

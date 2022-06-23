@@ -1,0 +1,3 @@
+lol, just use the command given to you: nc 13.250.249.51 7101
+
+Flag: CDDC22{S1mp1e_Ch4113ng3_just_G0_4nd_S33}%

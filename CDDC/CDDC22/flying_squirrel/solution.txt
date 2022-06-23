@@ -1,0 +1,5 @@
+Extract the email from the publickey with gpg
+
+gpg PublicKey.file
+
+Key: CDDC22{naldaramgi@key.key}

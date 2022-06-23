@@ -1,0 +1,5 @@
+The file was obfuscated at first, after beautifying it I just went through the file and changed variable and function names to get a better understanding.
+I later realized that all that was interesting was in the decode function, it was an interval that did an computation each 6^4 ms, and what it finally did was to 
+create a js-element in the middle of the screen. By changing the interval rate to each 1ms it soon revealed the flag.
+
+Flag: CDDC22{Th1s_is_FLAG_4ft3r_tHe_c0mpeT1tI0n;->}

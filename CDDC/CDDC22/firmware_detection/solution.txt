@@ -1,0 +1,3 @@
+We were given a encrypted router binary, by looking at the hexdump we saw that it had the tag SHRS at the beginning, by googling a bit I found a guide on how to decrypt the kinds of routers. https://0x434b.dev/breaking-the-d-link-dir3060-firmware-encryption-static-analysis-part-2/. Using his python-code the decryption was easy, then we could binwalk and extract the squashfs filesystem. From there it was just a simple find . -name "flag" to locate the flag.
+
+Flag: CDDC22{C0uld_y0u_D3crypt_F1rmw4r3???}

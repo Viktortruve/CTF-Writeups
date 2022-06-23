@@ -1,0 +1,5 @@
+Just use aircrack-ng to crack the wep-password.
+
+aircrack-ng -z -w dictionary.txt wepcrack.pcap
+
+Flag: CDDC22{Dr0ne_WEP_Cr@cking!!!}

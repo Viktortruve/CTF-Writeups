@@ -1,0 +1,4 @@
+You were given a "empty" file where all the dots and dashes where replaced by empty chars. I wrote a python script to translate the text to hex and the parsing the hex chars to either a dot or a dash.
+The transforming the morsecode to ascii.
+
+Flag: CDDC22{L1STEN-T0-THE-M0RSE-C0D3-PLE4SE}

@@ -1,0 +1,3 @@
+We were given a huge .svg file. It recorded a terminal where someone echoed a flag.png file to base64 str, all of these encodings where stored as tag in the XML-file. I wrote a python script to loop over all of these tags and concating the base64-text to a string. Then I used a base64 to png tool online to get a picture. It contained the flag.
+
+Flag: CDDC22{S4V4G3_LOVE}

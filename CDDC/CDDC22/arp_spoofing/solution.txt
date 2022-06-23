@@ -1,0 +1,5 @@
+This was an ARP spoof attack, just look through the pcapng file and look for a MAC address that differs from all the other ones.
+
+
+
+Flag: CDDC22{30:24:a9:81:04:90}

@@ -1,0 +1,4 @@
+Were given a pdf over an encryption schema, it was quite ez to follow. Some hiccups on how the AES-CTR mode was calculated. Wrote all in a python script to create AES-Cipher.
+When that was created we could decrypt chal.enc and use the password created from the secret passphrase to open the zip file.
+
+FLag: CDDC22{H4sh_b4sed_m3ssage_4uthent1cation_c0dE}

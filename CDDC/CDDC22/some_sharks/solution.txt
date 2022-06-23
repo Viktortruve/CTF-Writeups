@@ -1,0 +1,9 @@
+By going through the .pcap file and especially the http-headers we found some possible ips. I just went through the GET requests until I found the ip-address in question. Then I sorted in wireshark by this command ip.dst == 13.250.249.51 && http, all outgoing http requests from the ip.
+
+Then I check all packets and the authorization headers.
+
+Finally we found the user:pass combo - admin:aklfj!JRFIASLZJFop1i02FJ102.
+
+This, when entered to the website gave us the flag.
+
+Flag: CDDC22{S0me_Sh4rk5_4r3_k1nD_ISNt_1t?}

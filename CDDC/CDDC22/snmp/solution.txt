@@ -1,0 +1,22 @@
+Find the SNMP request sendt by oid value: iso.3.6.1.2.1.1.1.0 in the pcap file.
+
+Filter oid values by entering snmp.name == 1.3.6.1.2.1.1.1.0.
+
+The printer's SNMP community was exposed and attacked.
+Analyze the packet to check the printer's community and obtain a flag with an SNMP request.
+
+oid value : iso.3.6.1.2.1.1.1.0
+
+se any ONE of the servers below to complete the challenge.
+If you are unable to establish connection to a server of your choice, you may select another one from the list below.
+Please note that you need to connect to ONLY ONE of the servers below to solve this challenge.
+
+printer address : 13.215.173.140
+printer address : 18.139.217.107
+printer address : 54.169.185.185
+printer address : 18.140.62.102
+printer address : 13.215.194.232
+
+I found that the community was public1, the flag was found using snpget -c public1 13.215.173.140 1.3.6.1.2.1.1.1.0
+
+Flag: CDDC22{L34king_SNMP_C0mmunity_$}
